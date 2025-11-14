@@ -8,12 +8,12 @@ public class CentroDeDonaciones implements DonacionSubject {
         observadores.add(o);
     }
 
-    @Override
+  
     public void eliminar(DonacionObserver o) {
         observadores.remove(o);
     }
 
-    @Override
+  
     public void notificar(String tipo, String cantidad, String donante) {
         for (DonacionObserver o : observadores) {
             o.actualizar(tipo, cantidad, donante);
