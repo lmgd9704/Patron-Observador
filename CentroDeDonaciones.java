@@ -4,7 +4,6 @@ import java.util.List;
 public class CentroDeDonaciones implements DonacionSubject {
     private List<DonacionObserver> observadores = new ArrayList<>();
 
-    @Override
     public void registrar(DonacionObserver o) {
         observadores.add(o);
     }
